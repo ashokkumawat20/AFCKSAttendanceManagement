@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AFCKS Attendance Management</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of AFCKS Attendance Management is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+</resources>

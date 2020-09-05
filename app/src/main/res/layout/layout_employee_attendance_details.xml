@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:id="@+id/lead_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="3dp">
+
+        <LinearLayout
+            android:id="@+id/clickForWhatsap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#556199"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_small"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/view_Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:text="AFCKS TECHNOLOGIES"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/editEAttendance"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/completeFlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#556199"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            />
+            <ImageView
+                android:id="@+id/calling"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:visibility="gone"
+                android:src="@drawable/call_icon"
+                android:layout_weight=".5" />
+
+            <ImageView
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/whatsaap_img"
+                android:layout_weight=".5" />
+
+            <ImageView
+                android:id="@+id/create_task"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/create_task"
+                android:layout_weight=".5" />
+
+            <ImageView
+                android:id="@+id/todayTask"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/today_task"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
